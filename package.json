@@ -1,0 +1,13 @@
+{
+  "name": "hitc-demo-file-uploader",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@hitc/netsuite-types": "^2025.1.10",
+    "@types/jquery": "^3.5.16"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/headintheclouddev/hitc-demo-file-uploader"
+  }
+}
