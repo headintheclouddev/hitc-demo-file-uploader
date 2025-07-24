@@ -20,8 +20,7 @@ define(["require", "exports", "N/file", "N/log"], function (require, exports, fi
             const fileType = FileTypes[type] || file.Type.PLAINTEXT;
             let fileId = 0;
             try {
-                const fileObj = file.create({ fileType, name: fileName, contents: fileContent, folder });
-                fileObj.isOnline = true;
+                const fileObj = file.create({ fileType, name: fileName, contents: fileContent, folder, isOnline: true });
                 fileId = fileObj.save();
                 log.debug('createFile', `Created file ID: ${fileId}, type ${fileType} (from type ${type}).`);
             }

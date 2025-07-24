@@ -21,8 +21,7 @@ export function onRequest(context: EntryPoints.Suitelet.onRequestContext) {
     const fileType = FileTypes[type] || file.Type.PLAINTEXT;
     let fileId = 0;
     try {
-      const fileObj = file.create({ fileType, name: fileName, contents: fileContent, folder });
-      fileObj.isOnline = true;
+      const fileObj = file.create({ fileType, name: fileName, contents: fileContent, folder, isOnline: true });
       fileId           = fileObj.save();
       log.debug('createFile', `Created file ID: ${fileId}, type ${fileType} (from type ${type}).`);
     } catch(e) { // [CSI-258] Probably too large (> 10MB)
