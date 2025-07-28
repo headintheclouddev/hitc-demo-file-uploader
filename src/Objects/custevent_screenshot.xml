@@ -10,7 +10,7 @@
   <appliestosolution>F</appliestosolution>
   <appliestotask>F</appliestotask>
   <applyformatting>F</applyformatting>
-  <availableexternally>F</availableexternally>
+  <availableexternally>T</availableexternally>
   <checkspelling>F</checkspelling>
   <defaultchecked>F</defaultchecked>
   <defaultselection></defaultselection>
