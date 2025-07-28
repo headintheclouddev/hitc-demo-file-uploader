@@ -6,8 +6,5 @@
       <feature required="true">SERVERSIDESCRIPTING</feature>
       <feature required="false">CRM</feature>
     </features>
-    <objects>
-      <object>custentity_cust_priority</object>
-    </objects>
   </dependencies>
 </manifest>
