@@ -8,5 +8,5 @@
 import {EntryPoints} from "N/types";
 
 export function pageInit(context: EntryPoints.Client.pageInitContext) {
-
+  // TODO: Link the file fields in the online form up to our suitelet
 }
