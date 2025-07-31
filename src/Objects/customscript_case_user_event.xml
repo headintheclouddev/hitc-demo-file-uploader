@@ -13,13 +13,13 @@
       <alllocalizationcontexts>T</alllocalizationcontexts>
       <allpartners>F</allpartners>
       <allroles>T</allroles>
-      <audslctrole></audslctrole>
+      <audslctrole>ONLINE_FORM_USER</audslctrole>
       <eventtype></eventtype>
       <executioncontext>USEREVENT|USERINTERFACE</executioncontext>
       <isdeployed>T</isdeployed>
       <loglevel>DEBUG</loglevel>
       <recordtype>SUPPORTCASE</recordtype>
-      <runasrole></runasrole>
+      <runasrole>ADMINISTRATOR</runasrole>
       <status>RELEASED</status>
     </scriptdeployment>
   </scriptdeployments>
