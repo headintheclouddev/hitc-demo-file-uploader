@@ -10,7 +10,7 @@ define(["require", "exports", "N/file", "N/log"], function (require, exports, fi
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.onRequest = onRequest;
     function onRequest(context) {
-        const fileContent = context.request.parameters['content'];
+        const fileContent = context.request.parameters['content'] || '';
         const fileName = context.request.parameters['name'];
         const type = context.request.parameters['fileType'];
         const folder = context.request.parameters['folder'] || -10; // -10 is the Attachments Received folder

@@ -11,7 +11,7 @@ import file = require('N/file');
 import log = require('N/log');
 
 export function onRequest(context: EntryPoints.Suitelet.onRequestContext) {
-  const fileContent = context.request.parameters['content'] as string;
+  const fileContent = context.request.parameters['content'] as string || '';
   const fileName = context.request.parameters['name'] as string;
   const type = context.request.parameters['fileType'] as string;
   const folder = context.request.parameters['folder'] as number || -10; // -10 is the Attachments Received folder
