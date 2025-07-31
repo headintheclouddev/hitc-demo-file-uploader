@@ -10,5 +10,6 @@ define(["require", "exports"], function (require, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.beforeSubmit = beforeSubmit;
     function beforeSubmit(context) {
+        // TODO: Set the actual file field values from the file IDs saved
     }
 });

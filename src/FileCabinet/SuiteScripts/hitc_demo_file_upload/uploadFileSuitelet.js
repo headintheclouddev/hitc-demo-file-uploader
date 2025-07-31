@@ -10,5 +10,6 @@ define(["require", "exports"], function (require, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.onRequest = onRequest;
     function onRequest(context) {
+        // TODO: Save the files submitted from the online form to the file cabinet and return their internal id
     }
 });

@@ -9,5 +9,6 @@ define(["require", "exports"], function (require, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.pageInit = pageInit;
     function pageInit(context) {
+        // TODO: Link the file fields in the online form up to our suitelet
     }
 });

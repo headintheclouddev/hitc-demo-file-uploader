@@ -13,7 +13,7 @@ define(["require", "exports", "N/file", "N/log"], function (require, exports, fi
         const fileContent = context.request.parameters['content'];
         const fileName = context.request.parameters['name'];
         const type = context.request.parameters['fileType'];
-        const folder = context.request.parameters['folder'] || -10; // -10 is Attachments Received
+        const folder = context.request.parameters['folder'] || -10; // -10 is the Attachments Received folder
         log.debug(context.request.method, `Received data for fileName ${fileName}, type ${type}, folder ${folder}, data: ${fileContent.length}`);
         if (context.request.method == 'POST' && fileContent && fileName) {
             const FileTypes = { 'pdf': file.Type.PDF, 'doc': file.Type.WORD, 'png': file.Type.PNGIMAGE, 'jpg': file.Type.JPGIMAGE, 'csv': file.Type.CSV };
@@ -24,7 +24,7 @@ define(["require", "exports", "N/file", "N/log"], function (require, exports, fi
                 fileId = fileObj.save();
                 log.debug('createFile', `Created file ID: ${fileId}, type ${fileType} (from type ${type}).`);
             }
-            catch (e) { // [CSI-258] Probably too large (> 10MB)
+            catch (e) { // Probably too large (> 10MB)
                 log.error('createFile', `Failed to create file: ${e.message}`);
                 return '0';
             }
