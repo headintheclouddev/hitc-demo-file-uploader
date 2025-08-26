@@ -1,5 +1,5 @@
 <usereventscript scriptid="customscript_case_user_event">
-  <description>Sets file IDs into actual file fields.  For HITC YouTube demo in June 2025.</description>
+  <description>Sets file IDs into actual file fields.  For HITC YouTube demo in August 2025.</description>
   <isinactive>F</isinactive>
   <name>Case - User Event</name>
   <notifyadmins>F</notifyadmins>
